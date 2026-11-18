@@ -4,16 +4,6 @@ A small ServiceNow application that links new incidents to the caller's laptop i
 
 This is a personal project built on a ServiceNow Personal Developer Instance (PDI). It is not intended for production use.
 
-# Application Images
-## User Dashboard with widget that queries the current user's open incidents
-<img width="1867" height="834" alt="image" src="https://github.com/user-attachments/assets/5b918a44-b874-4a1c-a86d-0fda3ad0ab77" />
-
-## Triage Router
-<img width="1754" height="854" alt="image" src="https://github.com/user-attachments/assets/3e780d11-bf8d-44a7-8d17-360d51dae753" />
-
-## API Call to REST API
-<img width="1377" height="775" alt="REST API Traige" src="https://github.com/user-attachments/assets/8442c570-447e-4004-b15f-be99a61304f9" />
-
 ## Features
 - **CMDB linking:** A Business Rule on the Incident table sets `cmdb_ci` to the computer CI assigned to the caller.
 - **Hardware routing:** Incidents whose category is `hardware`, or whose short description mentions a laptop, computer, monitor, keyboard, or printer, are assigned to the **Hardware** group.
@@ -21,6 +11,18 @@ This is a personal project built on a ServiceNow Personal Developer Instance (PD
 - **REST API:** A Scripted REST API resource returns the open incident count for a given user `sys_id`.
 - **Service Portal widget:** An AngularJS widget shows the logged-in user's name and open incident count, colored red when the count is above zero and green when it is zero.
 - **Automated tests:** Pytest tests check the REST endpoint's status codes and response format. GitHub Actions runs them on push and pull request.
+
+## Screenshots
+### User Dashboard 
+Widget that queries the current user's open incidents
+<img width="1867" height="834" alt="image" src="https://github.com/user-attachments/assets/5b918a44-b874-4a1c-a86d-0fda3ad0ab77" />
+
+### Triage Router
+<img width="1754" height="854" alt="image" src="https://github.com/user-attachments/assets/3e780d11-bf8d-44a7-8d17-360d51dae753" />
+
+### API Call to REST API
+<img width="1377" height="775" alt="REST API Traige" src="https://github.com/user-attachments/assets/8442c570-447e-4004-b15f-be99a61304f9" />
+
 
 ## Architecture
 
