@@ -6,7 +6,7 @@ INSTANCE = os.environ["SN_INSTANCE"]    # e.g. dev12345
 USER = os.environ["SN_USER"]
 PASSWORD = os.environ["SN_PASSWORD"]
 USER_SYS_ID = os.environ["SN_TEST_USER_SYS_ID"]
-SCOPE = "x_yourname_triage"             # replace with your scope
+SCOPE = "x_1910001_triage_0"
 
 URL = f"https://{INSTANCE}.service-now.com/api/{SCOPE}/triage/open-count/{USER_SYS_ID}"
 
