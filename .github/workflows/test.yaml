@@ -16,12 +16,22 @@ jobs:
     steps:
       - name: Wake instance
         run: |
-          for i in 1 2 3 4 5; do
-            STATUS=$(curl -s --max-time 30 -o /dev/null -w "%{http_code}" "https://${SN_INSTANCE}.service-now.com/stats.do")
+          INSTANCE_URL="https://${{ secrets.SN_INSTANCE }}.service-now.com"
+          echo "Waking instance..."
+          # First request follows the redirect to trigger the wake-up
+          curl -s -L -o /dev/null -w "Wake trigger: HTTP %{http_code}\n" "$INSTANCE_URL/stats.do"
+          # Now poll until it's actually up
+          for i in $(seq 1 20); do
+            sleep 15
+            STATUS=$(curl -s -o /dev/null -w "%{http_code}" -L "$INSTANCE_URL/stats.do")
             echo "Attempt $i: HTTP $STATUS"
-            if [ "$STATUS" = "200" ]; then break; fi
-            sleep 30
+            if [ "$STATUS" = "200" ]; then
+              echo "Instance is awake!"
+              exit 0
+            fi
           done
+          echo "Instance did not wake in time"
+          exit 1
 
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
