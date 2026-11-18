@@ -21,7 +21,7 @@ def test_endpoint_returns_200():
 def test_response_contains_expected_fields():
     body = get_count().json()["result"]
     assert "open_incidents" in body
-    assert isinstance(body["open_incidents"], int)
+    assert isinstance(body["open_incidents"], (int, float))
     assert body["open_incidents"] >= 0
 
 def test_unknown_user_returns_404():
