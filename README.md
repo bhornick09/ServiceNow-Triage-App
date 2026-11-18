@@ -144,3 +144,7 @@ Example response:
 - Replace keyword routing with Flow Designer or a Assignment Rule
 - Add tests for the Business Rule routing logic
 - Add a SOAP endpoint for the same data
+
+## Struggles
+- GitHub actions failed many many times due to auth issues. I thought it had been fixed every update, with it to simply fail again. Eventually, I found there was a recent change that restricts basic auth by default:
+- ServiceNow's Basic Auth Restriction feature enforced (since November 6th). It requires users to have the snc_basic_auth_api_access role to authenticate via Basic Auth.
