@@ -5,14 +5,14 @@ A small ServiceNow application that links new incidents to the caller's laptop i
 This is a personal project built on a ServiceNow Personal Developer Instance (PDI). It is not intended for production use.
 
 # Application Images
+## User Dashboard with widget that queries the current user's open incidents
+<img width="1867" height="834" alt="image" src="https://github.com/user-attachments/assets/5b918a44-b874-4a1c-a86d-0fda3ad0ab77" />
+
 ## Triage Router
 <img width="1754" height="854" alt="image" src="https://github.com/user-attachments/assets/3e780d11-bf8d-44a7-8d17-360d51dae753" />
 
 ## API Call to REST API
 <img width="1377" height="775" alt="REST API Traige" src="https://github.com/user-attachments/assets/8442c570-447e-4004-b15f-be99a61304f9" />
-
-## User Dashboard with widget that queries the current user's open incidents
-<img width="1861" height="834" alt="image" src="https://github.com/user-attachments/assets/da421908-2d8a-42ab-b42f-7364529e6fe0" />
 
 ## Features
 - **CMDB linking:** A Business Rule on the Incident table sets `cmdb_ci` to the computer CI assigned to the caller.
