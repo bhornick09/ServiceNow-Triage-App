@@ -1,0 +1,1140 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2026-11-18 18:36:07">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Triage Router">153fd84b83a013107755c810feaad3f6</application>
+<application_name>Triage Router</application_name>
+<application_scope>x_1910001_triage_0</application_scope>
+<application_version>1.0.0</application_version>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description> </description>
+<inserted/>
+<name>Triage Router</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>f084494383e413107755c810feaad38f</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-18 18:36:06</sys_created_on>
+<sys_id>078449cb83a413107755c810feaad381</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-18 18:36:06</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Triage Router">153fd84b83a013107755c810feaad3f6</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_c032b48f832413107755c810feaad373</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[api.controller=function() {
+    var c = this;
+    c.statusClass = function() {
+        return c.data.count &gt; 0 ? 'triage-open' : 'triage-clear';
+    };
+};]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.triage-card { max-width: 320px; text-align: center; }&amp;#13;
+.triage-open { color: #c0392b; }&amp;#13;
+.triage-clear { color: #27ae60; }&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;triage-open-count&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]&gt;&lt;/link&gt;&lt;name&gt;Triage Open Count&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+    var util = new TriageUtils();
+    data.count = util.getOpenIncidentCount(gs.getUserID());
+    data.userName = gs.getUserName();
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-11-18 17:21:57&lt;/sys_created_on&gt;&lt;sys_id&gt;c032b48f832413107755c810feaad373&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Triage Open Count&lt;/sys_name&gt;&lt;sys_package display_value="Triage Router" source="x_1910001_triage_0"&gt;153fd84b83a013107755c810feaad3f6&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Triage Router"&gt;153fd84b83a013107755c810feaad3f6&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_c032b48f832413107755c810feaad373&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-11-18 17:21:57&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="panel panel-default triage-card"&gt;
+  &lt;div class="panel-heading"&gt;&lt;strong&gt;Triage Status&lt;/strong&gt;&lt;/div&gt;
+  &lt;div class="panel-body"&gt;
+    &lt;p&gt;Welcome, {{c.data.userName}}&lt;/p&gt;
+    &lt;h2 ng-class="c.statusClass()"&gt;{{c.data.count}}&lt;/h2&gt;
+    &lt;p&gt;open incidents&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-622724663</payload_hash>
+<remote_update_set display_value="Triage Router">078449cb83a413107755c810feaad381</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-18 18:36:06</sys_created_on>
+<sys_id>138449cb83a413107755c810feaad383</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a1eff1bdbf0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-18 18:36:06</sys_updated_on>
+<table/>
+<target_name>Triage Open Count</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>f493bc0360641310f172ff66e251ec12</update_guid>
+<update_guid_history>f493bc0360641310f172ff66e251ec12:-622724663</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Triage Router">153fd84b83a013107755c810feaad3f6</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_2c2868cb83e013107755c810feaad38b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-11-18 16:33:25</sys_created_on><sys_id>2c2868cb83e013107755c810feaad38b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>.admin</sys_name><sys_package display_value="Triage Router" source="x_1910001_triage_0">153fd84b83a013107755c810feaad3f6</sys_package><sys_policy/><sys_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</sys_scope><sys_security_acl display_value="x_1910001_triage">9618e4cb83e013107755c810feaad3b5</sys_security_acl><sys_update_name>sys_security_acl_role_2c2868cb83e013107755c810feaad38b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-11-18 16:33:25</sys_updated_on><sys_user_role display_value="admin" name="admin">2831a114c611228501d4ea6c309d626d</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>1554821452</payload_hash>
+<remote_update_set display_value="Triage Router">078449cb83a413107755c810feaad381</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-18 18:36:06</sys_created_on>
+<sys_id>1384c90783e413107755c810feaad301</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a1eff1bd730000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-18 18:36:06</sys_updated_on>
+<table>x_1910001_triage</table>
+<target_name>.admin</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>8a78e00fc9e0131086120807fc2ec7eb</update_guid>
+<update_guid_history>8a78e00fc9e0131086120807fc2ec7eb:-1480123204</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Triage Router">153fd84b83a013107755c810feaad3f6</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_1910001_triage_0_computers_assigned_user</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="DELETE" element="assigned_user" table="x_1910001_triage_0_computers"><active>true</active><array>false</array><attributes/><audit>false</audit><calculation/><choice>0</choice><choice_field/><choice_table/><column_label>Assigned User</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>assigned_user</element><element_reference>false</element_reference><foreign_database/><formula/><function_definition/><function_field>false</function_field><internal_type display_value="String">string</internal_type><mandatory>false</mandatory><max_length>40</max_length><name>x_1910001_triage_0_computers</name><next_element/><primary>false</primary><read_only>false</read_only><read_only_option/><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-11-18 16:02:46</sys_created_on><sys_id>8971248f83a013107755c810feaad301</sys_id><sys_name>Assigned User</sys_name><sys_package display_value="Triage Router" source="x_1910001_triage_0">153fd84b83a013107755c810feaad3f6</sys_package><sys_policy/><sys_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</sys_scope><sys_update_name>sys_dictionary_x_1910001_triage_0_computers_assigned_user</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-11-18 16:02:48</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><virtual_type>script</virtual_type><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>-443201976</payload_hash>
+<remote_update_set display_value="Triage Router">078449cb83a413107755c810feaad381</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-18 18:36:06</sys_created_on>
+<sys_id>178449cb83a413107755c810feaad384</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a1eff1bd290000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-18 18:36:06</sys_updated_on>
+<table>x_1910001_triage_0_computers</table>
+<target_name>x_1910001_triage_0_computers.assigned_user</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>69b3a0c3eee013105d2f69a8f60d081b</update_guid>
+<update_guid_history>69b3a0c3eee013105d2f69a8f60d081b:-443201976,a971648fa6a0131086cce0d8374bed46:-2127209836,5571248f7ea01310a049b9068f778545:777330551</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Triage Router">153fd84b83a013107755c810feaad3f6</application>
+<category>customer</category>
+<comments/>
+<name>sys_embedded_help_role_ad3f1c4b83a013107755c810feaad326</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role"><sys_embedded_help_role action="INSERT_OR_UPDATE"><order>10</order><role display_value="x_1910001_triage_0.admin" name="x_1910001_triage_0.admin">a53f1c4b83a013107755c810feaad321</role><sys_class_name>sys_embedded_help_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-11-18 15:52:58</sys_created_on><sys_id>ad3f1c4b83a013107755c810feaad326</sys_id><sys_mod_count>0</sys_mod_count><sys_name>a53f1c4b83a013107755c810feaad321</sys_name><sys_package display_value="Triage Router" source="x_1910001_triage_0">153fd84b83a013107755c810feaad3f6</sys_package><sys_policy/><sys_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</sys_scope><sys_update_name>sys_embedded_help_role_ad3f1c4b83a013107755c810feaad326</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-11-18 15:52:58</sys_updated_on></sys_embedded_help_role></record_update>]]></payload>
+<payload_hash>-615574718</payload_hash>
+<remote_update_set display_value="Triage Router">078449cb83a413107755c810feaad381</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-18 18:36:06</sys_created_on>
+<sys_id>1784890783e413107755c810feaad3fd</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a1eff1bb9d0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-18 18:36:06</sys_updated_on>
+<table/>
+<target_name>a53f1c4b83a013107755c810feaad321</target_name>
+<type>Embedded Help Role Priority</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Triage Router">153fd84b83a013107755c810feaad3f6</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_e0c02c0f83a013107755c810feaad342</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="DELETE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-11-18 15:59:44</sys_created_on><sys_id>e0c02c0f83a013107755c810feaad342</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1910001_triage_0_computers.x_1910001_triage_0.admin</sys_name><sys_package display_value="Triage Router" source="x_1910001_triage_0">153fd84b83a013107755c810feaad3f6</sys_package><sys_policy/><sys_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</sys_scope><sys_security_acl display_value="">60c02c0f83a013107755c810feaad339</sys_security_acl><sys_update_name>sys_security_acl_role_e0c02c0f83a013107755c810feaad342</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-11-18 15:59:44</sys_updated_on><sys_user_role display_value="x_1910001_triage_0.admin" name="x_1910001_triage_0.admin">a53f1c4b83a013107755c810feaad321</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>2106902522</payload_hash>
+<remote_update_set display_value="Triage Router">078449cb83a413107755c810feaad381</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-18 18:36:06</sys_created_on>
+<sys_id>1784c90783e413107755c810feaad302</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a1eff1bc130000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-18 18:36:06</sys_updated_on>
+<table>60c02c0f83a013107755c810feaad339</table>
+<target_name>x_1910001_triage_0_computers.x_1910001_triage_0.admin</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>e0b320c355e01310967dfb69b75f2f81</update_guid>
+<update_guid_history>e0b320c355e01310967dfb69b75f2f81:2106902522,2cc02c0fc4a013108a16a82bf6d16b56:-1294107500</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Triage Router">153fd84b83a013107755c810feaad3f6</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_1910001_triage_0_computers_assigned_user_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation action="DELETE" element="assigned_user" label="Assigned User" language="en" table="x_1910001_triage_0_computers"><sys_documentation action="DELETE"><element>assigned_user</element><help/><hint/><label>Assigned User</label><language>en</language><name>x_1910001_triage_0_computers</name><plural/><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-11-18 16:02:46</sys_created_on><sys_id>8d71248f83a013107755c810feaad304</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Assigned User</sys_name><sys_package display_value="Triage Router" source="x_1910001_triage_0">153fd84b83a013107755c810feaad3f6</sys_package><sys_policy/><sys_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</sys_scope><sys_update_name>sys_documentation_x_1910001_triage_0_computers_assigned_user_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-11-18 16:02:48</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-271237904</payload_hash>
+<remote_update_set display_value="Triage Router">078449cb83a413107755c810feaad381</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-18 18:36:06</sys_created_on>
+<sys_id>1b8449cb83a413107755c810feaad385</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a1eff1bd050000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-18 18:36:06</sys_updated_on>
+<table>x_1910001_triage_0_computers</table>
+<target_name>x_1910001_triage_0_computers.assigned_user</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>15b360c340e01310b0f566b3915a0887</update_guid>
+<update_guid_history>15b360c340e01310b0f566b3915a0887:-271237904,e571648f32a01310007162f2bc74c84e:2002795584,dd71248f59a013104304cdb9e892c9a5:2138401724</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Triage Router">153fd84b83a013107755c810feaad3f6</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_7246600b83e013107755c810feaad31a</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_1910001_triage_0.TriageUtils&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description&gt;Script Include is essentially a function store, this function returns active incidents for a caller. &lt;/description&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;TriageUtils&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var TriageUtils = Class.create();
+TriageUtils.prototype = {
+    initialize: function() {},
+
+    // Returns the number of active incidents for a caller (sys_user sys_id)
+    getOpenIncidentCount: function(userSysId) {
+        var count = 0;
+        var ga = new GlideAggregate('incident');
+        ga.addQuery('caller_id', userSysId);
+        ga.addQuery('active', true);
+        ga.addAggregate('COUNT');
+        ga.query();
+        if (ga.next()) {
+            count = parseInt(ga.getAggregate('COUNT'), 10) || 0;
+        }
+        return count;
+    },
+
+    type: 'TriageUtils'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-11-18 16:25:31&lt;/sys_created_on&gt;&lt;sys_id&gt;7246600b83e013107755c810feaad31a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;TriageUtils&lt;/sys_name&gt;&lt;sys_package display_value="Triage Router" source="x_1910001_triage_0"&gt;153fd84b83a013107755c810feaad3f6&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Triage Router"&gt;153fd84b83a013107755c810feaad3f6&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_7246600b83e013107755c810feaad31a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-11-18 16:25:31&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-681150955</payload_hash>
+<remote_update_set display_value="Triage Router">078449cb83a413107755c810feaad381</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-18 18:36:06</sys_created_on>
+<sys_id>1b84890783e413107755c810feaad3fe</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a1eff1bd650000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-18 18:36:06</sys_updated_on>
+<table/>
+<target_name>TriageUtils</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_guid>d6a6acc73fe0131022e8087070e41fc3</update_guid>
+<update_guid_history>d6a6acc73fe0131022e8087070e41fc3:-681150955</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Triage Router">153fd84b83a013107755c810feaad3f6</application>
+<category>customer</category>
+<comments/>
+<name>sys_user_role_a53f1c4b83a013107755c810feaad321</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description>Default admin role</description><elevated_privilege>false</elevated_privilege><federated_id>5ZGOtSpPBTW9vNIzUjr9wO0mN0RP+cgvh2aosvEUb6o=</federated_id><grantable>true</grantable><includes_roles/><name>x_1910001_triage_0.admin</name><scoped_admin>false</scoped_admin><suffix>admin</suffix><sys_class_name>sys_user_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-11-18 15:52:58</sys_created_on><sys_id>a53f1c4b83a013107755c810feaad321</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1910001_triage_0.admin</sys_name><sys_package display_value="Triage Router" source="x_1910001_triage_0">153fd84b83a013107755c810feaad3f6</sys_package><sys_policy/><sys_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</sys_scope><sys_update_name>sys_user_role_a53f1c4b83a013107755c810feaad321</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-11-18 15:52:58</sys_updated_on></sys_user_role></record_update>]]></payload>
+<payload_hash>567222335</payload_hash>
+<remote_update_set display_value="Triage Router">078449cb83a413107755c810feaad381</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-18 18:36:06</sys_created_on>
+<sys_id>1b84c90783e413107755c810feaad303</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a1eff1bb8d0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-18 18:36:06</sys_updated_on>
+<table/>
+<target_name>x_1910001_triage_0.admin</target_name>
+<type>Role</type>
+<update_domain>global</update_domain>
+<update_guid>a93f1c4b45a01310d9e735881b69b22c</update_guid>
+<update_guid_history>a93f1c4b45a01310d9e735881b69b22c:-1685597499</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Triage Router">153fd84b83a013107755c810feaad3f6</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_77b0e80f83a013107755c810feaad378</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="DELETE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description>Allow create for records in x_1910001_triage_0_computers, for users with role x_1910001_triage_0.admin.</description><local_or_existing>Existing</local_or_existing><name>x_1910001_triage_0_computers</name><operation display_value="create">create</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-11-18 15:59:41</sys_created_on><sys_id>77b0e80f83a013107755c810feaad378</sys_id><sys_mod_count>2</sys_mod_count><sys_name>x_1910001_triage_0_computers</sys_name><sys_package display_value="Triage Router" source="x_1910001_triage_0">153fd84b83a013107755c810feaad3f6</sys_package><sys_policy/><sys_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</sys_scope><sys_update_name>sys_security_acl_77b0e80f83a013107755c810feaad378</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-11-18 15:59:42</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>-1812076479</payload_hash>
+<remote_update_set display_value="Triage Router">078449cb83a413107755c810feaad381</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-18 18:36:06</sys_created_on>
+<sys_id>1f84890783e413107755c810feaad3ff</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a1eff1bc4d0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-18 18:36:06</sys_updated_on>
+<table>x_1910001_triage_0_computers</table>
+<target_name>x_1910001_triage_0_computers</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>b4b320c31ce013109f40c39832e925a3</update_guid>
+<update_guid_history>b4b320c31ce013109f40c39832e925a3:-1812076479,88c0e80fffa01310e92e4d291b40d1b5:1550274747</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Triage Router">153fd84b83a013107755c810feaad3f6</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_9618e4cb83e013107755c810feaad3b5</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description/><local_or_existing>Existing</local_or_existing><name>x_1910001_triage</name><operation display_value="read">read</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-11-18 16:33:26</sys_created_on><sys_id>9618e4cb83e013107755c810feaad3b5</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1910001_triage</sys_name><sys_package display_value="Triage Router" source="x_1910001_triage_0">153fd84b83a013107755c810feaad3f6</sys_package><sys_policy/><sys_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</sys_scope><sys_update_name>sys_security_acl_9618e4cb83e013107755c810feaad3b5</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-11-18 16:33:26</sys_updated_on><type display_value="REST_Endpoint">REST_Endpoint</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>-1914344999</payload_hash>
+<remote_update_set display_value="Triage Router">078449cb83a413107755c810feaad381</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-18 18:36:06</sys_created_on>
+<sys_id>5384c90783e413107755c810feaad300</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a1eff1bd870000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-18 18:36:06</sys_updated_on>
+<table>x_1910001_triage</table>
+<target_name>x_1910001_triage</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>5678240fb6e013103920dd0f1ee04332</update_guid>
+<update_guid_history>5678240fb6e013103920dd0f1ee04332:-1914344999</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Triage Router">153fd84b83a013107755c810feaad3f6</application>
+<category>customer</category>
+<comments/>
+<name>sys_app_153fd84b83a013107755c810feaad3f6</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_app"><sys_app action="INSERT_OR_UPDATE"><active>true</active><application_runtime_policy>none</application_runtime_policy><can_edit_in_studio>true</can_edit_in_studio><enforce_license>none</enforce_license><guided_setup_guid/><hide_on_ui>false</hide_on_ui><ide_created>SNS</ide_created><installed_as_dependency>false</installed_as_dependency><js_level>es_latest</js_level><licensable>true</licensable><license/><license_category>none</license_category><license_definition/><license_model>none</license_model><logo/><menu/><name>Triage Router</name><package_json/><package_resolver_version>1.0.0</package_resolver_version><private>false</private><restrict_table_access>false</restrict_table_access><runtime_access_tracking>permissive</runtime_access_tracking><scope>x_1910001_triage_0</scope><scoped_administration>false</scoped_administration><short_description/><sn_managed>false</sn_managed><source>x_1910001_triage_0</source><store_correlation_id/><store_url/><subscription_entitlement/><sys_class_name>sys_app</sys_class_name><sys_code/><sys_created_by>admin</sys_created_by><sys_created_on>2026-11-18 15:52:57</sys_created_on><sys_id>153fd84b83a013107755c810feaad3f6</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-11-18 15:52:57</sys_updated_on><template/><trackable>true</trackable><uninstall_blocked>false</uninstall_blocked><user_role/><vendor/><vendor_prefix/><version>1.0.0</version></sys_app><sys_translated_text action="delete_multiple" query="documentkey=153fd84b83a013107755c810feaad3f6"/></record_update>]]></payload>
+<payload_hash>1978681275</payload_hash>
+<remote_update_set display_value="Triage Router">078449cb83a413107755c810feaad381</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-18 18:36:06</sys_created_on>
+<sys_id>578449cb83a413107755c810feaad383</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a1eff1bb460000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-18 18:36:06</sys_updated_on>
+<table/>
+<target_name>Triage Router</target_name>
+<type>Custom Application</type>
+<update_domain>global</update_domain>
+<update_guid>593f1c4b93a0131080e148859d7a041e</update_guid>
+<update_guid_history>593f1c4b93a0131080e148859d7a041e:1978681275</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Triage Router">153fd84b83a013107755c810feaad3f6</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_1910001_triage_0_computers__en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation action="DELETE" element="" label="Computers" language="en" table="x_1910001_triage_0_computers"><sys_documentation action="DELETE"><element/><help/><hint/><label>Computers</label><language>en</language><name>x_1910001_triage_0_computers</name><plural>Computers</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-11-18 15:59:36</sys_created_on><sys_id>bab0680f83a013107755c810feaad390</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Computers</sys_name><sys_package display_value="Triage Router" source="x_1910001_triage_0">153fd84b83a013107755c810feaad3f6</sys_package><sys_policy/><sys_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</sys_scope><sys_update_name>sys_documentation_x_1910001_triage_0_computers__en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-11-18 15:59:36</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>1578093733</payload_hash>
+<remote_update_set display_value="Triage Router">078449cb83a413107755c810feaad381</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-18 18:36:06</sys_created_on>
+<sys_id>5784890783e413107755c810feaad3fc</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a1eff1bc020000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-18 18:36:06</sys_updated_on>
+<table>x_1910001_triage_0_computers</table>
+<target_name>x_1910001_triage_0_computers</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>94b320c355e01310ee921edbe164fe09</update_guid>
+<update_guid_history>94b320c355e01310ee921edbe164fe09:1578093733,dcb3ec835de01310fe1d043564186be9:868227661</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Triage Router">153fd84b83a013107755c810feaad3f6</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_ccc0e80f83a013107755c810feaad3bc</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="DELETE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-11-18 15:59:42</sys_created_on><sys_id>ccc0e80f83a013107755c810feaad3bc</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1910001_triage_0_computers.x_1910001_triage_0.admin</sys_name><sys_package display_value="Triage Router" source="x_1910001_triage_0">153fd84b83a013107755c810feaad3f6</sys_package><sys_policy/><sys_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</sys_scope><sys_security_acl display_value="">77b0e80f83a013107755c810feaad378</sys_security_acl><sys_update_name>sys_security_acl_role_ccc0e80f83a013107755c810feaad3bc</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-11-18 15:59:42</sys_updated_on><sys_user_role display_value="x_1910001_triage_0.admin" name="x_1910001_triage_0.admin">a53f1c4b83a013107755c810feaad321</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>1983742838</payload_hash>
+<remote_update_set display_value="Triage Router">078449cb83a413107755c810feaad381</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-18 18:36:06</sys_created_on>
+<sys_id>5784c90783e413107755c810feaad301</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a1eff1bc850000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-18 18:36:06</sys_updated_on>
+<table>77b0e80f83a013107755c810feaad378</table>
+<target_name>x_1910001_triage_0_computers.x_1910001_triage_0.admin</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>e0b320c3e8e013103df19c5ce9e94a99</update_guid>
+<update_guid_history>e0b320c3e8e013103df19c5ce9e94a99:1983742838,c8c0e80fd4a013109969742ae51408c5:-1417267184</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Triage Router">153fd84b83a013107755c810feaad3f6</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_1910001_triage_0_computers_model</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="DELETE" element="model" table="x_1910001_triage_0_computers"><active>true</active><array>false</array><attributes/><audit>false</audit><calculation/><choice>3</choice><choice_field/><choice_table/><column_label>Model</column_label><comments/><create_roles/><default_value>macbook</default_value><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>model</element><element_reference>false</element_reference><foreign_database/><formula/><function_definition/><function_field>false</function_field><internal_type display_value="Choice">choice</internal_type><mandatory>false</mandatory><max_length>255</max_length><name>x_1910001_triage_0_computers</name><next_element/><primary>false</primary><read_only>false</read_only><read_only_option/><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-11-18 16:02:46</sys_created_on><sys_id>8171248f83a013107755c810feaad326</sys_id><sys_name>Model</sys_name><sys_package display_value="Triage Router" source="x_1910001_triage_0">153fd84b83a013107755c810feaad3f6</sys_package><sys_policy/><sys_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</sys_scope><sys_update_name>sys_dictionary_x_1910001_triage_0_computers_model</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-11-18 16:02:47</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><virtual_type>script</virtual_type><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>-417283098</payload_hash>
+<remote_update_set display_value="Triage Router">078449cb83a413107755c810feaad381</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-18 18:36:06</sys_created_on>
+<sys_id>5b8449cb83a413107755c810feaad384</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a1eff1bd110000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-18 18:36:06</sys_updated_on>
+<table>x_1910001_triage_0_computers</table>
+<target_name>x_1910001_triage_0_computers.model</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>6db360c36fe01310cd9495b60b4deafe</update_guid>
+<update_guid_history>6db360c36fe01310cd9495b60b4deafe:-417283098,5d71248fb7a0131066675d560ebd47db:124152346,d571248f8ea01310e124deee7d9b5c3e:-907805323</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Triage Router">153fd84b83a013107755c810feaad3f6</application>
+<category>customer</category>
+<comments/>
+<name>sys_kmf_module_key_policy_a2e2284383e013107755c810feaad386</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_kmf_module_key_policy"><sys_kmf_module_key_policy action="INSERT_OR_UPDATE"><crypto_module display_value="com_glide_security_oauth_jwt_signing">5520d875ff32221099cfffffffffff8e</crypto_module><key_type display_value="Private Signature Generation Key">eacabf24c7003300af4d43c6f0976341</key_type><last_enforced>2026-11-18 16:09:09</last_enforced><result>reject</result><sys_class_name>sys_kmf_module_key_policy</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-11-18 16:09:09</sys_created_on><sys_id>a2e2284383e013107755c810feaad386</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Triage Router" source="x_1910001_triage_0">153fd84b83a013107755c810feaad3f6</sys_package><sys_policy/><sys_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</sys_scope><sys_update_name>sys_kmf_module_key_policy_a2e2284383e013107755c810feaad386</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-11-18 16:09:09</sys_updated_on></sys_kmf_module_key_policy></record_update>]]></payload>
+<payload_hash>-1950637747</payload_hash>
+<remote_update_set display_value="Triage Router">078449cb83a413107755c810feaad381</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-18 18:36:06</sys_created_on>
+<sys_id>5b84890783e413107755c810feaad3fd</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a1eff1bbe50000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-18 18:36:06</sys_updated_on>
+<table/>
+<target_name/>
+<type>Crypto Module Key Policy</type>
+<update_domain>global</update_domain>
+<update_guid>a6e22843bae0131086953d99e46c578a</update_guid>
+<update_guid_history>a6e22843bae0131086953d99e46c578a:-1950637747</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Triage Router">153fd84b83a013107755c810feaad3f6</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_list_x_1910001_triage_0_computers_null</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_list parent="" relationship="" sys_domain="global" table="x_1910001_triage_0_computers" version="2" view=""><sys_ui_list action="DELETE"><average_value>false</average_value><element/><max_value>false</max_value><min_value>false</min_value><name>x_1910001_triage_0_computers</name><parent/><position/><relationship/><sum>false</sum><sys_class_name>sys_ui_list</sys_class_name><sys_created_by/><sys_created_on/><sys_domain>global</sys_domain><sys_domain_path/><sys_id>47b0280b83a013107755c810feaad313</sys_id><sys_mod_count/><sys_name>x_1910001_triage_0_computers</sys_name><sys_package display_value="Triage Router" source="x_1910001_triage_0">153fd84b83a013107755c810feaad3f6</sys_package><sys_policy/><sys_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</sys_scope><sys_update_name/><sys_updated_by/><sys_updated_on>2026-11-18 16:12:37</sys_updated_on><sys_user/><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_list></sys_ui_list></record_update>]]></payload>
+<payload_hash>806976007</payload_hash>
+<remote_update_set display_value="Triage Router">078449cb83a413107755c810feaad381</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-18 18:36:06</sys_created_on>
+<sys_id>5b84c90783e413107755c810feaad302</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a1eff1bcda0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-18 18:36:06</sys_updated_on>
+<table>x_1910001_triage_0_computers</table>
+<target_name>x_1910001_triage_0_computers</target_name>
+<type>List Layout</type>
+<update_domain>global</update_domain>
+<update_guid>5db360c3efe01310f77ae9e649fbcc46</update_guid>
+<update_guid_history>5db360c3efe01310f77ae9e649fbcc46:806976007</update_guid_history>
+<update_set display_value=""/>
+<view>Default view</view>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Triage Router">153fd84b83a013107755c810feaad3f6</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_1910001_triage_0_computers_model_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation action="DELETE" element="model" label="Model" language="en" table="x_1910001_triage_0_computers"><sys_documentation action="DELETE"><element>model</element><help/><hint/><label>Model</label><language>en</language><name>x_1910001_triage_0_computers</name><plural/><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-11-18 16:02:46</sys_created_on><sys_id>8571248f83a013107755c810feaad329</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Model</sys_name><sys_package display_value="Triage Router" source="x_1910001_triage_0">153fd84b83a013107755c810feaad3f6</sys_package><sys_policy/><sys_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</sys_scope><sys_update_name>sys_documentation_x_1910001_triage_0_computers_model_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-11-18 16:02:47</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-1796439922</payload_hash>
+<remote_update_set display_value="Triage Router">078449cb83a413107755c810feaad381</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-18 18:36:06</sys_created_on>
+<sys_id>5f8449cb83a413107755c810feaad385</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a1eff1bceb0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-18 18:36:06</sys_updated_on>
+<table>x_1910001_triage_0_computers</table>
+<target_name>x_1910001_triage_0_computers.model</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>99b360c382e013100c7c94160b31fe72</update_guid>
+<update_guid_history>99b360c382e013100c7c94160b31fe72:-1796439922,9971648f6ca0131021f4bbda54535408:-931765090,5d71248f2fa0131037d5b593e308dc9f:544717550</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Triage Router">153fd84b83a013107755c810feaad3f6</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_37b0e80f83a013107755c810feaad38b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="DELETE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description>Allow read for records in x_1910001_triage_0_computers, for users with role x_1910001_triage_0.hardware.</description><local_or_existing>Existing</local_or_existing><name>x_1910001_triage_0_computers</name><operation display_value="read">read</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-11-18 15:59:41</sys_created_on><sys_id>37b0e80f83a013107755c810feaad38b</sys_id><sys_mod_count>2</sys_mod_count><sys_name>x_1910001_triage_0_computers</sys_name><sys_package display_value="Triage Router" source="x_1910001_triage_0">153fd84b83a013107755c810feaad3f6</sys_package><sys_policy/><sys_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</sys_scope><sys_update_name>sys_security_acl_37b0e80f83a013107755c810feaad38b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-11-18 15:59:42</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>967705038</payload_hash>
+<remote_update_set display_value="Triage Router">078449cb83a413107755c810feaad381</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-18 18:36:06</sys_created_on>
+<sys_id>5f84890783e413107755c810feaad3fe</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a1eff1bc320000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-18 18:36:06</sys_updated_on>
+<table>x_1910001_triage_0_computers</table>
+<target_name>x_1910001_triage_0_computers</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>6cb320c30be01310ac2b21e67911c04e</update_guid>
+<update_guid_history>6cb320c30be01310ac2b21e67911c04e:967705038,08c0e80ff8a0131037b5f9a1572ef9a9:-512668281</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Triage Router">153fd84b83a013107755c810feaad3f6</application>
+<category>customer</category>
+<comments/>
+<name>sys_user_role_bbb0e80f83a013107755c810feaad380</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description>View Computer Information</description><elevated_privilege>false</elevated_privilege><federated_id>MUXCKhmjwtUfzGuy1hI7vxt4hVVTynTM5hASwuc+kr8=</federated_id><grantable>true</grantable><includes_roles/><name>x_1910001_triage_0.hardware</name><scoped_admin>false</scoped_admin><suffix>hardware</suffix><sys_class_name>sys_user_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-11-18 15:59:41</sys_created_on><sys_id>bbb0e80f83a013107755c810feaad380</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1910001_triage_0.hardware</sys_name><sys_package display_value="Triage Router" source="x_1910001_triage_0">153fd84b83a013107755c810feaad3f6</sys_package><sys_policy/><sys_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</sys_scope><sys_update_name>sys_user_role_bbb0e80f83a013107755c810feaad380</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-11-18 15:59:41</sys_updated_on></sys_user_role></record_update>]]></payload>
+<payload_hash>1265652602</payload_hash>
+<remote_update_set display_value="Triage Router">078449cb83a413107755c810feaad381</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-18 18:36:06</sys_created_on>
+<sys_id>5f84c90783e413107755c810feaad303</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a1eff1bbbc0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-18 18:36:06</sys_updated_on>
+<table/>
+<target_name>x_1910001_triage_0.hardware</target_name>
+<type>Role</type>
+<update_domain>global</update_domain>
+<update_guid>b7b0e80fd3a01310c07c275ef2739f89</update_guid>
+<update_guid_history>b7b0e80fd3a01310c07c275ef2739f89:-297517250</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Triage Router">153fd84b83a013107755c810feaad3f6</application>
+<category>customer</category>
+<comments/>
+<name>sys_documentation_x_1910001_triage_0_computers_serial_number_en</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation action="DELETE" element="serial_number" label="Serial Number" language="en" table="x_1910001_triage_0_computers"><sys_documentation action="DELETE"><element>serial_number</element><help/><hint/><label>Serial Number</label><language>en</language><name>x_1910001_triage_0_computers</name><plural/><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-11-18 16:02:46</sys_created_on><sys_id>4971248f83a013107755c810feaad323</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Serial Number</sys_name><sys_package display_value="Triage Router" source="x_1910001_triage_0">153fd84b83a013107755c810feaad3f6</sys_package><sys_policy/><sys_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</sys_scope><sys_update_name>sys_documentation_x_1910001_triage_0_computers_serial_number_en</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-11-18 16:02:48</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+<payload_hash>-290334744</payload_hash>
+<remote_update_set display_value="Triage Router">078449cb83a413107755c810feaad381</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-18 18:36:06</sys_created_on>
+<sys_id>938449cb83a413107755c810feaad386</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a1eff1bcf60000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-18 18:36:06</sys_updated_on>
+<table>x_1910001_triage_0_computers</table>
+<target_name>x_1910001_triage_0_computers.serial_number</target_name>
+<type>Field Label</type>
+<update_domain>global</update_domain>
+<update_guid>9db360c3b7e01310aca3d900621bfb54</update_guid>
+<update_guid_history>9db360c3b7e01310aca3d900621bfb54:-290334744,6171648fdaa013108b584d46b09c3032:-904361160,9d71248fbea01310e953e409ea0a6aa2:202944412</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Triage Router">153fd84b83a013107755c810feaad3f6</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_4cc0e80f83a013107755c810feaad3c7</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="DELETE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description>Allow read for records in x_1910001_triage_0_computers, for users with role x_1910001_triage_0.admin.</description><local_or_existing>Existing</local_or_existing><name>x_1910001_triage_0_computers</name><operation display_value="read">read</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-11-18 15:59:42</sys_created_on><sys_id>4cc0e80f83a013107755c810feaad3c7</sys_id><sys_mod_count>2</sys_mod_count><sys_name>x_1910001_triage_0_computers</sys_name><sys_package display_value="Triage Router" source="x_1910001_triage_0">153fd84b83a013107755c810feaad3f6</sys_package><sys_policy/><sys_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</sys_scope><sys_update_name>sys_security_acl_4cc0e80f83a013107755c810feaad3c7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-11-18 15:59:43</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>-1251688473</payload_hash>
+<remote_update_set display_value="Triage Router">078449cb83a413107755c810feaad381</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-18 18:36:06</sys_created_on>
+<sys_id>9384890783e413107755c810feaad3ff</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a1eff1bc610000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-18 18:36:06</sys_updated_on>
+<table>x_1910001_triage_0_computers</table>
+<target_name>x_1910001_triage_0_computers</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>ecb320c3c0e01310a6726b69a50e0e66</update_guid>
+<update_guid_history>ecb320c3c0e01310a6726b69a50e0e66:-1251688473,84c0e80f38a01310c74b165192f2d7e5:-512668281</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Triage Router">153fd84b83a013107755c810feaad3f6</application>
+<category>customer</category>
+<comments/>
+<name>sys_ws_definition_c00a20cf83e013107755c810feaad37a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_definition"><sys_ws_definition action="INSERT_OR_UPDATE"><active>true</active><base_uri>/api/x_1910001_triage_0/triage</base_uri><consumes>application/json,application/xml,text/xml</consumes><consumes_customized>false</consumes_customized><default_version>No active default version</default_version><doc_link/><enforce_acl>9618e4cb83e013107755c810feaad3b5</enforce_acl><is_versioned>false</is_versioned><name>Triage API</name><namespace>x_1910001_triage_0</namespace><produces>application/json,application/xml,text/xml</produces><produces_customized>false</produces_customized><service_id>triage</service_id><short_description/><sys_class_name>sys_ws_definition</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-11-18 17:12:40</sys_created_on><sys_id>c00a20cf83e013107755c810feaad37a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Triage API</sys_name><sys_package display_value="Triage Router" source="x_1910001_triage_0">153fd84b83a013107755c810feaad3f6</sys_package><sys_policy/><sys_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</sys_scope><sys_update_name>sys_ws_definition_c00a20cf83e013107755c810feaad37a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-11-18 17:12:40</sys_updated_on></sys_ws_definition></record_update>]]></payload>
+<payload_hash>1443350178</payload_hash>
+<remote_update_set display_value="Triage Router">078449cb83a413107755c810feaad381</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-18 18:36:06</sys_created_on>
+<sys_id>9384c90783e413107755c810feaad304</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a1eff1bdab0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-18 18:36:06</sys_updated_on>
+<table/>
+<target_name>Triage API</target_name>
+<type>Scripted REST API</type>
+<update_domain>global</update_domain>
+<update_guid>c971bc0f5f241310b9472ff9b0bcb5c3</update_guid>
+<update_guid_history>c971bc0f5f241310b9472ff9b0bcb5c3:1443350178</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Triage Router">153fd84b83a013107755c810feaad3f6</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_dcc02c0f83a013107755c810feaad30c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="DELETE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description>Allow write for records in x_1910001_triage_0_computers, for users with role x_1910001_triage_0.admin.</description><local_or_existing>Existing</local_or_existing><name>x_1910001_triage_0_computers</name><operation display_value="write">write</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-11-18 15:59:43</sys_created_on><sys_id>dcc02c0f83a013107755c810feaad30c</sys_id><sys_mod_count>2</sys_mod_count><sys_name>x_1910001_triage_0_computers</sys_name><sys_package display_value="Triage Router" source="x_1910001_triage_0">153fd84b83a013107755c810feaad3f6</sys_package><sys_policy/><sys_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</sys_scope><sys_update_name>sys_security_acl_dcc02c0f83a013107755c810feaad30c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-11-18 15:59:43</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>1786762874</payload_hash>
+<remote_update_set display_value="Triage Router">078449cb83a413107755c810feaad381</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-18 18:36:06</sys_created_on>
+<sys_id>9784c90783e413107755c810feaad300</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a1eff1bca00000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-18 18:36:06</sys_updated_on>
+<table>x_1910001_triage_0_computers</table>
+<target_name>x_1910001_triage_0_computers</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>7cb320c348e01310e201fc2c0c8b1ec7</update_guid>
+<update_guid_history>7cb320c348e01310e201fc2c0c8b1ec7:1786762874,18c02c0f6ca0131095aab5195187a311:-560740277</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Triage Router">153fd84b83a013107755c810feaad3f6</application>
+<category>customer</category>
+<comments/>
+<name>sys_choice_x_1910001_triage_0_computers_model</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_choice action="INSERT_OR_UPDATE" field="model" table="x_1910001_triage_0_computers" version="3"><sys_choice_set action="INSERT_OR_UPDATE"><element>model</element><name>x_1910001_triage_0_computers</name><sys_class_name>sys_choice_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-11-18 16:02:47</sys_created_on><sys_id>5171248f83a013107755c810feaad3e0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>model</sys_name><sys_package display_value="Triage Router" source="x_1910001_triage_0">153fd84b83a013107755c810feaad3f6</sys_package><sys_policy/><sys_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</sys_scope><sys_update_name>sys_choice_x_1910001_triage_0_computers_model</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-11-18 16:02:47</sys_updated_on></sys_choice_set></sys_choice></record_update>]]></payload>
+<payload_hash>2058170151</payload_hash>
+<remote_update_set display_value="Triage Router">078449cb83a413107755c810feaad381</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-18 18:36:06</sys_created_on>
+<sys_id>9b8449cb83a413107755c810feaad383</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a1eff1bbd00000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-18 18:36:06</sys_updated_on>
+<table>x_1910001_triage_0_computers</table>
+<target_name>x_1910001_triage_0_computers.model</target_name>
+<type>Choice list</type>
+<update_domain>global</update_domain>
+<update_guid>c9b360c397e013103ee946dfbc50f817</update_guid>
+<update_guid_history>c9b360c397e013103ee946dfbc50f817:2058170151,0db360c3ade01310ff0c86c0fb60da13:563893823,89b360c3dae013102aa54de45707b20f:1683002355,9571248fcda013100d5e6e29bd716be7:1507028074</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Triage Router">153fd84b83a013107755c810feaad3f6</application>
+<category>customer</category>
+<comments/>
+<name>sys_embedded_help_role_653f1c4b83a013107755c810feaad331</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role"><sys_embedded_help_role action="INSERT_OR_UPDATE"><order>1000</order><role display_value="x_1910001_triage_0.user" name="x_1910001_triage_0.user">2d3f1c4b83a013107755c810feaad32e</role><sys_class_name>sys_embedded_help_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-11-18 15:52:58</sys_created_on><sys_id>653f1c4b83a013107755c810feaad331</sys_id><sys_mod_count>0</sys_mod_count><sys_name>2d3f1c4b83a013107755c810feaad32e</sys_name><sys_package display_value="Triage Router" source="x_1910001_triage_0">153fd84b83a013107755c810feaad3f6</sys_package><sys_policy/><sys_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</sys_scope><sys_update_name>sys_embedded_help_role_653f1c4b83a013107755c810feaad331</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-11-18 15:52:58</sys_updated_on></sys_embedded_help_role></record_update>]]></payload>
+<payload_hash>-1924538554</payload_hash>
+<remote_update_set display_value="Triage Router">078449cb83a413107755c810feaad381</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-18 18:36:06</sys_created_on>
+<sys_id>9b84890783e413107755c810feaad3fc</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a1eff1bb760000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-18 18:36:06</sys_updated_on>
+<table/>
+<target_name>2d3f1c4b83a013107755c810feaad32e</target_name>
+<type>Embedded Help Role Priority</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Triage Router">153fd84b83a013107755c810feaad3f6</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_dcc02c0f83a013107755c810feaad32e</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="DELETE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-11-18 15:59:43</sys_created_on><sys_id>dcc02c0f83a013107755c810feaad32e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1910001_triage_0_computers.x_1910001_triage_0.admin</sys_name><sys_package display_value="Triage Router" source="x_1910001_triage_0">153fd84b83a013107755c810feaad3f6</sys_package><sys_policy/><sys_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</sys_scope><sys_security_acl display_value="">dcc02c0f83a013107755c810feaad30c</sys_security_acl><sys_update_name>sys_security_acl_role_dcc02c0f83a013107755c810feaad32e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-11-18 15:59:43</sys_updated_on><sys_user_role display_value="x_1910001_triage_0.admin" name="x_1910001_triage_0.admin">a53f1c4b83a013107755c810feaad321</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>228642792</payload_hash>
+<remote_update_set display_value="Triage Router">078449cb83a413107755c810feaad381</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-18 18:36:06</sys_created_on>
+<sys_id>9b84c90783e413107755c810feaad301</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a1eff1bc910000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-18 18:36:06</sys_updated_on>
+<table>dcc02c0f83a013107755c810feaad30c</table>
+<target_name>x_1910001_triage_0_computers.x_1910001_triage_0.admin</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>b8b320c376e01310edb3a7b134e8b5bd</update_guid>
+<update_guid_history>b8b320c376e01310edb3a7b134e8b5bd:228642792,60c02c0fcca0131042e6642cbd94cb37:1122600066</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Triage Router">153fd84b83a013107755c810feaad3f6</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_1910001_triage_0_computers_null</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="DELETE" element="" table="x_1910001_triage_0_computers"><active>true</active><array>false</array><attributes>enforce_dot_walk_cross_scope_access=true</attributes><audit>false</audit><calculation/><choice>0</choice><choice_field/><choice_table/><column_label/><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element/><element_reference>false</element_reference><foreign_database/><formula/><function_definition/><function_field>false</function_field><internal_type display_value="Collection">collection</internal_type><mandatory>false</mandatory><max_length>40</max_length><name>x_1910001_triage_0_computers</name><next_element/><primary>false</primary><read_only>false</read_only><read_only_option/><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-11-18 15:59:36</sys_created_on><sys_id>beb0680f83a013107755c810feaad389</sys_id><sys_name>x_1910001_triage_0_computers</sys_name><sys_package display_value="Triage Router" source="x_1910001_triage_0">153fd84b83a013107755c810feaad3f6</sys_package><sys_policy/><sys_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</sys_scope><sys_update_name>sys_dictionary_x_1910001_triage_0_computers_null</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-11-18 15:59:36</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><virtual_type>script</virtual_type><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>1094998880</payload_hash>
+<remote_update_set display_value="Triage Router">078449cb83a413107755c810feaad381</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-18 18:36:06</sys_created_on>
+<sys_id>9f8449cb83a413107755c810feaad384</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a1eff1bd380000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-18 18:36:06</sys_updated_on>
+<table>x_1910001_triage_0_computers</table>
+<target_name>x_1910001_triage_0_computers</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>adb3a0c3c2e01310e5ccb459afdb052b</update_guid>
+<update_guid_history>adb3a0c3c2e01310e5ccb459afdb052b:1094998880,7ab0680fe1a013105c9a01e9a1f4f9c2:-348347756</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Triage Router">153fd84b83a013107755c810feaad3f6</application>
+<category>customer</category>
+<comments/>
+<name>sys_scope_privilege_e1d53447836413107755c810feaad3ca</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>read</operation><source_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-11-18 17:31:49</sys_created_on><sys_id>e1d53447836413107755c810feaad3ca</sys_id><sys_mod_count>0</sys_mod_count><sys_name>incident</sys_name><sys_package display_value="Triage Router" source="x_1910001_triage_0">153fd84b83a013107755c810feaad3f6</sys_package><sys_policy/><sys_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</sys_scope><sys_update_name>sys_scope_privilege_e1d53447836413107755c810feaad3ca</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-11-18 17:31:49</sys_updated_on><target_name>incident</target_name><target_scope display_value="Global">global</target_scope><target_type>sys_db_object</target_type></sys_scope_privilege></record_update>]]></payload>
+<payload_hash>-231854997</payload_hash>
+<remote_update_set display_value="Triage Router">078449cb83a413107755c810feaad381</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-18 18:36:06</sys_created_on>
+<sys_id>9f84890783e413107755c810feaad3fd</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a1eff1be080000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-18 18:36:06</sys_updated_on>
+<table/>
+<target_name>incident</target_name>
+<type>Cross scope privilege</type>
+<update_domain>global</update_domain>
+<update_guid>e5d5344741641310b1fe15dd279516ce</update_guid>
+<update_guid_history>e5d5344741641310b1fe15dd279516ce:-231854997</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Triage Router">153fd84b83a013107755c810feaad3f6</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_47b02c4b832013107755c810feaad389</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="47b02c4b832013107755c810feaad389" sys_domain="global" table="x_1910001_triage_0_computers" version="3" view=""><sys_ui_section action="DELETE"><caption/><header>false</header><name>x_1910001_triage_0_computers</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by/><sys_created_on/><sys_domain>global</sys_domain><sys_domain_path/><sys_id>47b02c4b832013107755c810feaad389</sys_id><sys_mod_count/><sys_name>x_1910001_triage_0_computers</sys_name><sys_overrides/><sys_package display_value="Triage Router" source="x_1910001_triage_0">153fd84b83a013107755c810feaad3f6</sys_package><sys_policy/><sys_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</sys_scope><sys_update_name/><sys_updated_by/><sys_updated_on>2026-11-18 16:12:36</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<payload_hash>-838458241</payload_hash>
+<remote_update_set display_value="Triage Router">078449cb83a413107755c810feaad381</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-18 18:36:06</sys_created_on>
+<sys_id>9f84c90783e413107755c810feaad302</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a1eff1bcbe0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-18 18:36:06</sys_updated_on>
+<table>x_1910001_triage_0_computers</table>
+<target_name>x_1910001_triage_0_computers</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_guid>8db360c313e01310861562bd70beb135</update_guid>
+<update_guid_history>8db360c313e01310861562bd70beb135:-838458241,8fb0680f45a013104ab54a48ca0e19f7:-1592179235</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Triage Router">153fd84b83a013107755c810feaad3f6</application>
+<category>customer</category>
+<comments/>
+<name>sp_container_d674b883836413107755c810feaad3b6</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><aria_label/><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>Service Portal Triage - Container 1</name><order>1</order><semantic_tag/><sp_page display_value="service_portal_triage">5e74fc03836413107755c810feaad348</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-11-18 17:25:52</sys_created_on><sys_id>d674b883836413107755c810feaad3b6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Service Portal Triage - Container 1</sys_name><sys_package display_value="Triage Router" source="x_1910001_triage_0">153fd84b83a013107755c810feaad3f6</sys_package><sys_policy/><sys_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</sys_scope><sys_update_name>sp_container_d674b883836413107755c810feaad3b6</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-11-18 17:25:52</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+<payload_hash>-99357795</payload_hash>
+<remote_update_set display_value="Triage Router">078449cb83a413107755c810feaad381</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-18 18:36:06</sys_created_on>
+<sys_id>cb8449cb83a413107755c810feaad381</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a1eff1bde70000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-18 18:36:06</sys_updated_on>
+<table/>
+<target_name>Service Portal Triage - Container 1</target_name>
+<type>Container</type>
+<update_domain>global</update_domain>
+<update_guid>1274b883456413100e16a87ff64893bb</update_guid>
+<update_guid_history>1274b883456413100e16a87ff64893bb:-99357795</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Triage Router">153fd84b83a013107755c810feaad3f6</application>
+<category>customer</category>
+<comments/>
+<name>sys_dictionary_x_1910001_triage_0_computers_serial_number</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="DELETE" element="serial_number" table="x_1910001_triage_0_computers"><active>true</active><array>false</array><attributes/><audit>false</audit><calculation/><choice>0</choice><choice_field/><choice_table/><column_label>Serial Number</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>serial_number</element><element_reference>false</element_reference><foreign_database/><formula/><function_definition/><function_field>false</function_field><internal_type display_value="String">string</internal_type><mandatory>false</mandatory><max_length>40</max_length><name>x_1910001_triage_0_computers</name><next_element/><primary>false</primary><read_only>false</read_only><read_only_option/><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-11-18 16:02:46</sys_created_on><sys_id>c571248f83a013107755c810feaad307</sys_id><sys_name>Serial Number</sys_name><sys_package display_value="Triage Router" source="x_1910001_triage_0">153fd84b83a013107755c810feaad3f6</sys_package><sys_policy/><sys_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</sys_scope><sys_update_name>sys_dictionary_x_1910001_triage_0_computers_serial_number</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-11-18 16:02:47</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><virtual_type>script</virtual_type><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>-1439863448</payload_hash>
+<remote_update_set display_value="Triage Router">078449cb83a413107755c810feaad381</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-18 18:36:06</sys_created_on>
+<sys_id>d38449cb83a413107755c810feaad385</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a1eff1bd440000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-18 18:36:06</sys_updated_on>
+<table>x_1910001_triage_0_computers</table>
+<target_name>x_1910001_triage_0_computers.serial_number</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>31b3a0c3c2e0131030a5e0ab401ac560</update_guid>
+<update_guid_history>31b3a0c3c2e0131030a5e0ab401ac560:-1439863448,1571648fb4a0131095d3526cfc32062a:1171095988,9d71248fbba01310eabb6b8cd22af041:1162968727</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Triage Router">153fd84b83a013107755c810feaad3f6</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_6f65e48783e013107755c810feaad38c</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;incident&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Triage Router - Link CI and Route Hardwa&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+    // Guard: nothing to link without a caller
+    if (!current.caller_id) {
+        return;
+    }
+
+    // ITSM/CMDB: link the caller's computer CI
+    var ci = new GlideRecord('cmdb_ci_computer');
+    ci.addQuery('assigned_to', current.caller_id);
+    ci.setLimit(1);
+    ci.query();
+    if (ci.next()) {
+        current.cmdb_ci = ci.getUniqueValue();
+    }
+
+    // ITSM routing: send hardware incidents to the Hardware group
+    var isHardware = (current.category == 'hardware') ||
+                     /laptop|computer|monitor|keyboard|printer/i.test(current.short_description + '');
+    if (isHardware) {
+        var grp = new GlideRecord('sys_user_group');
+        grp.addQuery('name', 'Hardware');
+        grp.setLimit(1);
+        grp.query();
+        if (grp.next()) {
+            current.assignment_group = grp.getUniqueValue();
+        }
+    }
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-11-18 16:23:33&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;6f65e48783e013107755c810feaad38c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Triage Router - Link CI and Route Hardwa&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Triage Router" source="x_1910001_triage_0"&gt;153fd84b83a013107755c810feaad3f6&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Triage Router"&gt;153fd84b83a013107755c810feaad3f6&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_6f65e48783e013107755c810feaad38c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-11-18 16:23:33&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;before&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=6f65e48783e013107755c810feaad38c"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1843649951</payload_hash>
+<remote_update_set display_value="Triage Router">078449cb83a413107755c810feaad381</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-18 18:36:06</sys_created_on>
+<sys_id>d384890783e413107755c810feaad3fe</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a1eff1bd530000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-18 18:36:06</sys_updated_on>
+<table>incident</table>
+<target_name>Triage Router - Link CI and Route Hardwa</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>9936acc709e01310b0a77bbe6852d4a1</update_guid>
+<update_guid_history>9936acc709e01310b0a77bbe6852d4a1:-1843649951</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Triage Router">153fd84b83a013107755c810feaad3f6</application>
+<category>customer</category>
+<comments/>
+<name>sys_user_role_2d3f1c4b83a013107755c810feaad32e</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description>Default user role</description><elevated_privilege>false</elevated_privilege><federated_id>Pv7zbJNLQnZ5SPBNvUpp5ITTPveFpvjMuZlJToEpNKc=</federated_id><grantable>true</grantable><includes_roles/><name>x_1910001_triage_0.user</name><scoped_admin>false</scoped_admin><suffix>user</suffix><sys_class_name>sys_user_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-11-18 15:52:58</sys_created_on><sys_id>2d3f1c4b83a013107755c810feaad32e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1910001_triage_0.user</sys_name><sys_package display_value="Triage Router" source="x_1910001_triage_0">153fd84b83a013107755c810feaad3f6</sys_package><sys_policy/><sys_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</sys_scope><sys_update_name>sys_user_role_2d3f1c4b83a013107755c810feaad32e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-11-18 15:52:58</sys_updated_on></sys_user_role></record_update>]]></payload>
+<payload_hash>-1926991760</payload_hash>
+<remote_update_set display_value="Triage Router">078449cb83a413107755c810feaad381</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-18 18:36:06</sys_created_on>
+<sys_id>d384c90783e413107755c810feaad303</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a1eff1bb620000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-18 18:36:06</sys_updated_on>
+<table/>
+<target_name>x_1910001_triage_0.user</target_name>
+<type>Role</type>
+<update_domain>global</update_domain>
+<update_guid>213f1c4b0ca01310ff3f98d1c557ba36</update_guid>
+<update_guid_history>213f1c4b0ca01310ff3f98d1c557ba36:1499939621</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Triage Router">153fd84b83a013107755c810feaad3f6</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_60c02c0f83a013107755c810feaad339</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="DELETE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description>Allow delete for records in x_1910001_triage_0_computers, for users with role x_1910001_triage_0.admin.</description><local_or_existing>Existing</local_or_existing><name>x_1910001_triage_0_computers</name><operation display_value="delete">delete</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-11-18 15:59:43</sys_created_on><sys_id>60c02c0f83a013107755c810feaad339</sys_id><sys_mod_count>2</sys_mod_count><sys_name>x_1910001_triage_0_computers</sys_name><sys_package display_value="Triage Router" source="x_1910001_triage_0">153fd84b83a013107755c810feaad3f6</sys_package><sys_policy/><sys_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</sys_scope><sys_update_name>sys_security_acl_60c02c0f83a013107755c810feaad339</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-11-18 15:59:44</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>-677698478</payload_hash>
+<remote_update_set display_value="Triage Router">078449cb83a413107755c810feaad381</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-18 18:36:06</sys_created_on>
+<sys_id>d784890783e413107755c810feaad3ff</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a1eff1bc220000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-18 18:36:06</sys_updated_on>
+<table>x_1910001_triage_0_computers</table>
+<target_name>x_1910001_triage_0_computers</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>a4b320c3a1e0131070305754dd0cde8b</update_guid>
+<update_guid_history>a4b320c3a1e0131070305754dd0cde8b:-677698478,a8c02c0fe4a01310915db88eb91d863d:-1628187747</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Triage Router">153fd84b83a013107755c810feaad3f6</application>
+<category>customer</category>
+<comments/>
+<name>ua_table_licensing_config_7eb0680f83a013107755c810feaad3be</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config"><ua_table_licensing_config action="DELETE"><is_fulfillment>false</is_fulfillment><license_condition/><license_model>none</license_model><license_roles/><name>x_1910001_triage_0_computers</name><op_delete>true</op_delete><op_insert>true</op_insert><op_update>true</op_update><owner_condition/><sys_class_name>ua_table_licensing_config</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-11-18 15:59:37</sys_created_on><sys_id>7eb0680f83a013107755c810feaad3be</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1910001_triage_0_computers</sys_name><sys_package display_value="Triage Router" source="x_1910001_triage_0">153fd84b83a013107755c810feaad3f6</sys_package><sys_policy/><sys_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</sys_scope><sys_update_name>ua_table_licensing_config_7eb0680f83a013107755c810feaad3be</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-11-18 15:59:37</sys_updated_on></ua_table_licensing_config></record_update>]]></payload>
+<payload_hash>-840826571</payload_hash>
+<remote_update_set display_value="Triage Router">078449cb83a413107755c810feaad381</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-18 18:36:06</sys_created_on>
+<sys_id>d784c90783e413107755c810feaad304</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a1eff1bccb0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-18 18:36:06</sys_updated_on>
+<table/>
+<target_name>x_1910001_triage_0_computers</target_name>
+<type>Table Subscription Configuration</type>
+<update_domain>global</update_domain>
+<update_guid>c5b360c3ffe01310a538ec5f20d40620</update_guid>
+<update_guid_history>c5b360c3ffe01310a538ec5f20d40620:-840826571</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Triage Router">153fd84b83a013107755c810feaad3f6</application>
+<category>customer</category>
+<comments/>
+<name>sp_page_5e74fc03836413107755c810feaad348</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page"><sp_page action="INSERT_OR_UPDATE"><category>custom</category><css/><draft>false</draft><dynamic_title_structure/><human_readable_url_structure/><id>service_portal_triage</id><internal>false</internal><omit_watcher>false</omit_watcher><public>false</public><roles/><seo_script/><short_description/><sys_class_name>sp_page</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-11-18 17:25:52</sys_created_on><sys_id>5e74fc03836413107755c810feaad348</sys_id><sys_mod_count>0</sys_mod_count><sys_name>service_portal_triage</sys_name><sys_package display_value="Triage Router" source="x_1910001_triage_0">153fd84b83a013107755c810feaad3f6</sys_package><sys_policy/><sys_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</sys_scope><sys_update_name>sp_page_5e74fc03836413107755c810feaad348</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-11-18 17:25:52</sys_updated_on><title>Service Portal Triage</title><use_seo_script>false</use_seo_script></sp_page><sys_translated_text action="delete_multiple" query="documentkey=5e74fc03836413107755c810feaad348"/></record_update>]]></payload>
+<payload_hash>421011553</payload_hash>
+<remote_update_set display_value="Triage Router">078449cb83a413107755c810feaad381</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-18 18:36:06</sys_created_on>
+<sys_id>db8449cb83a413107755c810feaad382</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a1eff1bdd30000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-18 18:36:06</sys_updated_on>
+<table/>
+<target_name>service_portal_triage</target_name>
+<type>Page</type>
+<update_domain>global</update_domain>
+<update_guid>9a74b883ef6413109c8cf88e6caf51b4</update_guid>
+<update_guid_history>9a74b883ef6413109c8cf88e6caf51b4:421011553</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Triage Router">153fd84b83a013107755c810feaad3f6</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_0cc0e80f83a013107755c810feaad3ae</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="DELETE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-11-18 15:59:42</sys_created_on><sys_id>0cc0e80f83a013107755c810feaad3ae</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1910001_triage_0_computers.x_1910001_triage_0.hardware</sys_name><sys_package display_value="Triage Router" source="x_1910001_triage_0">153fd84b83a013107755c810feaad3f6</sys_package><sys_policy/><sys_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</sys_scope><sys_security_acl display_value="">37b0e80f83a013107755c810feaad38b</sys_security_acl><sys_update_name>sys_security_acl_role_0cc0e80f83a013107755c810feaad3ae</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-11-18 15:59:42</sys_updated_on><sys_user_role display_value="x_1910001_triage_0.hardware" name="x_1910001_triage_0.hardware">bbb0e80f83a013107755c810feaad380</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>-1073637803</payload_hash>
+<remote_update_set display_value="Triage Router">078449cb83a413107755c810feaad381</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-18 18:36:06</sys_created_on>
+<sys_id>db84c90783e413107755c810feaad300</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a1eff1bc6e0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-18 18:36:06</sys_updated_on>
+<table>37b0e80f83a013107755c810feaad38b</table>
+<target_name>x_1910001_triage_0_computers.x_1910001_triage_0.hardware</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>64b320c3fae013100b3f3cb8bc853e43</update_guid>
+<update_guid_history>64b320c3fae013100b3f3cb8bc853e43:-1073637803,40c0e80f33a01310c54038388ea06dd1:-617089401</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Triage Router">153fd84b83a013107755c810feaad3f6</application>
+<category>customer</category>
+<comments/>
+<name>sys_db_object_32b0680f83a013107755c810feaad386</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="DELETE"><access/><actions_access>true</actions_access><alter_access>true</alter_access><caller_access/><client_scripts_access>true</client_scripts_access><configuration_access>false</configuration_access><create_access>true</create_access><create_access_controls>false</create_access_controls><delete_access>false</delete_access><filter_extension/><is_data_interface>false</is_data_interface><is_df_table>false</is_df_table><is_extendable>false</is_extendable><label>Computers</label><live_feed_enabled>false</live_feed_enabled><name>x_1910001_triage_0_computers</name><number_ref/><provider_class/><read_access>true</read_access><scriptable_table>false</scriptable_table><super_class/><sys_class_name>sys_db_object</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-11-18 15:59:36</sys_created_on><sys_id>32b0680f83a013107755c810feaad386</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Triage 0 Computers</sys_name><sys_package display_value="Triage Router" source="x_1910001_triage_0">153fd84b83a013107755c810feaad3f6</sys_package><sys_policy/><sys_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</sys_scope><sys_update_name>sys_db_object_32b0680f83a013107755c810feaad386</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-11-18 15:59:36</sys_updated_on><update_access>true</update_access><user_role/><ws_access>true</ws_access></sys_db_object></record_update>]]></payload>
+<payload_hash>716859813</payload_hash>
+<remote_update_set display_value="Triage Router">078449cb83a413107755c810feaad381</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-18 18:36:06</sys_created_on>
+<sys_id>df8449cb83a413107755c810feaad383</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a1eff1bbf50000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-18 18:36:06</sys_updated_on>
+<table>x_1910001_triage_0_computers</table>
+<target_name>Computers</target_name>
+<type>Table</type>
+<update_domain>global</update_domain>
+<update_guid>bdb3a0c38fe01310b8db7aa17f17f099</update_guid>
+<update_guid_history>bdb3a0c38fe01310b8db7aa17f17f099:716859813,fab0680fffa0131051e7880fcfa082c5:-1633462735</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Triage Router">153fd84b83a013107755c810feaad3f6</application>
+<category>customer</category>
+<comments/>
+<name>sys_embedded_help_role_7fb0e80f83a013107755c810feaad383</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role"><sys_embedded_help_role action="INSERT_OR_UPDATE"><order>1000</order><role display_value="x_1910001_triage_0.hardware" name="x_1910001_triage_0.hardware">bbb0e80f83a013107755c810feaad380</role><sys_class_name>sys_embedded_help_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-11-18 15:59:41</sys_created_on><sys_id>7fb0e80f83a013107755c810feaad383</sys_id><sys_mod_count>0</sys_mod_count><sys_name>bbb0e80f83a013107755c810feaad380</sys_name><sys_package display_value="Triage Router" source="x_1910001_triage_0">153fd84b83a013107755c810feaad3f6</sys_package><sys_policy/><sys_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</sys_scope><sys_update_name>sys_embedded_help_role_7fb0e80f83a013107755c810feaad383</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-11-18 15:59:41</sys_updated_on></sys_embedded_help_role></record_update>]]></payload>
+<payload_hash>-835905004</payload_hash>
+<remote_update_set display_value="Triage Router">078449cb83a413107755c810feaad381</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-18 18:36:06</sys_created_on>
+<sys_id>df84890783e413107755c810feaad3fc</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a1eff1bbae0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-18 18:36:06</sys_updated_on>
+<table/>
+<target_name>bbb0e80f83a013107755c810feaad380</target_name>
+<type>Embedded Help Role Priority</type>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Triage Router">153fd84b83a013107755c810feaad3f6</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_dcc0e80f83a013107755c810feaad3e9</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="DELETE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-11-18 15:59:43</sys_created_on><sys_id>dcc0e80f83a013107755c810feaad3e9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1910001_triage_0_computers.x_1910001_triage_0.admin</sys_name><sys_package display_value="Triage Router" source="x_1910001_triage_0">153fd84b83a013107755c810feaad3f6</sys_package><sys_policy/><sys_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</sys_scope><sys_security_acl display_value="">4cc0e80f83a013107755c810feaad3c7</sys_security_acl><sys_update_name>sys_security_acl_role_dcc0e80f83a013107755c810feaad3e9</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-11-18 15:59:43</sys_updated_on><sys_user_role display_value="x_1910001_triage_0.admin" name="x_1910001_triage_0.admin">a53f1c4b83a013107755c810feaad321</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>-1293884587</payload_hash>
+<remote_update_set display_value="Triage Router">078449cb83a413107755c810feaad381</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-11-18 18:36:06</sys_created_on>
+<sys_id>df84c90783e413107755c810feaad301</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1a1eff1bc7a0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-11-18 18:36:06</sys_updated_on>
+<table>4cc0e80f83a013107755c810feaad3c7</table>
+<target_name>x_1910001_triage_0_computers.x_1910001_triage_0.admin</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>2cb320c371e01310b7ce378b3c5ae45c</update_guid>
+<update_guid_history>2cb320c371e01310b7ce378b3c5ae45c:-1293884587,dcc02c0fcfa013104adcd844da668d0a:-399927313</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
