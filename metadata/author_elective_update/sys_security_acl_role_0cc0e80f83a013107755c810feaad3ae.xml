@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-18 15:59:42</sys_created_on>
+        <sys_id>0cc0e80f83a013107755c810feaad3ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1910001_triage_0_computers.x_1910001_triage_0.hardware</sys_name>
+        <sys_package display_value="Triage Router" source="x_1910001_triage_0">153fd84b83a013107755c810feaad3f6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</sys_scope>
+        <sys_security_acl display_value="x_1910001_triage_0_computers">37b0e80f83a013107755c810feaad38b</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_0cc0e80f83a013107755c810feaad3ae</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-18 15:59:42</sys_updated_on>
+        <sys_user_role display_value="x_1910001_triage_0.hardware" name="x_1910001_triage_0.hardware">bbb0e80f83a013107755c810feaad380</sys_user_role>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Triage Router">153fd84b83a013107755c810feaad3f6</application>
+        <file_path/>
+        <instance_id>b70b626a3b8fd6d49aefe747f4e45a1e</instance_id>
+        <instance_name>dev292484</instance_name>
+        <merge_base/>
+        <name>sys_security_acl_role_0cc0e80f83a013107755c810feaad3ae</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-11-18 15:59:42</sys_created_on><sys_id>0cc0e80f83a013107755c810feaad3ae</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1910001_triage_0_computers.x_1910001_triage_0.hardware</sys_name><sys_package display_value="Triage Router" source="x_1910001_triage_0">153fd84b83a013107755c810feaad3f6</sys_package><sys_policy/><sys_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</sys_scope><sys_security_acl display_value="x_1910001_triage_0_computers">37b0e80f83a013107755c810feaad38b</sys_security_acl><sys_update_name>sys_security_acl_role_0cc0e80f83a013107755c810feaad3ae</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-11-18 15:59:42</sys_updated_on><sys_user_role display_value="x_1910001_triage_0.hardware" name="x_1910001_triage_0.hardware">bbb0e80f83a013107755c810feaad380</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-617089401</payload_hash>
+        <record_name>x_1910001_triage_0_computers.x_1910001_triage_0.hardware</record_name>
+        <reverted_from/>
+        <source>193f1c4b83a013107755c810feaad318</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-18 15:59:42</sys_created_on>
+        <sys_id>80c0e80f83a013107755c810feaad3d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a1ef62a7af0000002</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-18 15:59:42</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>40c0e80f33a01310c54038388ea06dd1</update_guid>
+        <update_guid_history>40c0e80f33a01310c54038388ea06dd1:-617089401</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_1910001_triage_0_computers.x_1910001_triage_0.hardware">a0b320c383e013107755c810feaad32e</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-18 16:12:34</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>4986e476684f48dd9089d4a3364c2519</sys_id>
+        <sys_metadata>0cc0e80f83a013107755c810feaad3ae</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1910001_triage_0_computers.x_1910001_triage_0.hardware</sys_name>
+        <sys_package display_value="Triage Router" source="x_1910001_triage_0">153fd84b83a013107755c810feaad3f6</sys_package>
+        <sys_parent display_value="">37b0e80f83a013107755c810feaad38b</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</sys_scope>
+        <sys_scope_delete display_value="">167e9b91334142c882f3feb5ebce21b9</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_0cc0e80f83a013107755c810feaad3ae</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_0cc0e80f83a013107755c810feaad3ae">80c0e80f83a013107755c810feaad3d2</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-18 16:12:34</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

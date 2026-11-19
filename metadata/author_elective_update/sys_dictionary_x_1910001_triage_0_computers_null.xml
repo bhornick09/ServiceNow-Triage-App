@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_dictionary action="DELETE" element="" table="x_1910001_triage_0_computers">
+        <active>true</active>
+        <array>false</array>
+        <attributes>enforce_dot_walk_cross_scope_access=true</attributes>
+        <audit>false</audit>
+        <calculation/>
+        <choice>0</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <internal_type display_value="Collection">collection</internal_type>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <name>x_1910001_triage_0_computers</name>
+        <next_element/>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_dictionary</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-18 15:59:36</sys_created_on>
+        <sys_id>beb0680f83a013107755c810feaad389</sys_id>
+        <sys_name>x_1910001_triage_0_computers</sys_name>
+        <sys_package display_value="Triage Router" source="x_1910001_triage_0">153fd84b83a013107755c810feaad3f6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</sys_scope>
+        <sys_update_name>sys_dictionary_x_1910001_triage_0_computers_null</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-18 15:59:36</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_dictionary>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Triage Router">153fd84b83a013107755c810feaad3f6</application>
+        <file_path/>
+        <instance_id>b70b626a3b8fd6d49aefe747f4e45a1e</instance_id>
+        <instance_name>dev292484</instance_name>
+        <merge_base/>
+        <name>sys_dictionary_x_1910001_triage_0_computers_null</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="" table="x_1910001_triage_0_computers"><active>true</active><array>false</array><attributes>enforce_dot_walk_cross_scope_access=true</attributes><audit>false</audit><calculation/><choice>0</choice><choice_field/><choice_table/><column_label/><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element/><element_reference>false</element_reference><foreign_database/><formula/><function_definition/><function_field>false</function_field><internal_type display_value="Collection">collection</internal_type><mandatory>false</mandatory><max_length>40</max_length><name>x_1910001_triage_0_computers</name><next_element/><primary>false</primary><read_only>false</read_only><read_only_option/><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-11-18 15:59:36</sys_created_on><sys_id>beb0680f83a013107755c810feaad389</sys_id><sys_name>x_1910001_triage_0_computers</sys_name><sys_package display_value="Triage Router" source="x_1910001_triage_0">153fd84b83a013107755c810feaad3f6</sys_package><sys_policy/><sys_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</sys_scope><sys_update_name>sys_dictionary_x_1910001_triage_0_computers_null</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-11-18 15:59:36</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><virtual_type>script</virtual_type><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+        <payload_hash>-348347756</payload_hash>
+        <record_name>Computers</record_name>
+        <reverted_from/>
+        <source>193f1c4b83a013107755c810feaad318</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-18 15:59:37</sys_created_on>
+        <sys_id>7ab0680f83a013107755c810feaad3c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1a1ef6293d90000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-18 15:59:37</sys_updated_on>
+        <type>Dictionary</type>
+        <update_guid>7ab0680fe1a013105c9a01e9a1f4f9c2</update_guid>
+        <update_guid_history>7ab0680fe1a013105c9a01e9a1f4f9c2:-348347756</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-18 16:12:38</sys_created_on>
+        <sys_db_object display_value="" name="sys_dictionary">sys_dictionary</sys_db_object>
+        <sys_id>4ac199e59cf04b44abe6b3bc79311681</sys_id>
+        <sys_metadata>beb0680f83a013107755c810feaad389</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1910001_triage_0_computers</sys_name>
+        <sys_package display_value="Triage Router" source="x_1910001_triage_0">153fd84b83a013107755c810feaad3f6</sys_package>
+        <sys_parent display_value="">32b0680f83a013107755c810feaad386</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</sys_scope>
+        <sys_scope_delete display_value="">167e9b91334142c882f3feb5ebce21b9</sys_scope_delete>
+        <sys_update_name>sys_dictionary_x_1910001_triage_0_computers_null</sys_update_name>
+        <sys_update_version display_value="sys_dictionary_x_1910001_triage_0_computers_null">7ab0680f83a013107755c810feaad3c3</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-18 16:12:38</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

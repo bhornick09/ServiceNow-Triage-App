@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl/>
+        <http_method>GET</http_method>
+        <name>Open Incident Count</name>
+        <operation_script><![CDATA[(function process(request, response) {
+    var userId = request.pathParams.user_id;
+
+    // Validate that the user exists
+    var user = new GlideRecord('sys_user');
+    if (!user.get(userId)) {
+        response.setStatus(404);
+        return { error: 'User not found', user_id: userId };
+    }
+
+    var util = new TriageUtils();
+    return {
+        user_id: userId,
+        user_name: user.getValue('user_name'),
+        open_incidents: util.getOpenIncidentCount(userId)
+    };
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_1910001_triage_0/triage/open-count/{user_id}</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/open-count/{user_id}</relative_path>
+        <request_example/>
+        <requires_acl_authorization>false</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <support_trailing_slash>false</support_trailing_slash>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-18 19:39:00</sys_created_on>
+        <sys_id>1e72d543832813107755c810feaad35f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Open Incident Count</sys_name>
+        <sys_package display_value="Triage Router" source="x_1910001_triage_0">153fd84b83a013107755c810feaad3f6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</sys_scope>
+        <sys_update_name>sys_ws_operation_1e72d543832813107755c810feaad35f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-18 20:23:58</sys_updated_on>
+        <web_service_definition display_value="Triage API">c00a20cf83e013107755c810feaad37a</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

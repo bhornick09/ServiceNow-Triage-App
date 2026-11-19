@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+    var c = this;
+    c.statusClass = function() {
+        return c.data.count > 0 ? 'triage-open' : 'triage-clear';
+    };
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.triage-card { max-width: 320px; text-align: center; }&#13;
+.triage-open { color: #c0392b; }&#13;
+.triage-clear { color: #27ae60; }</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>triage-open-count</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Triage Open Count</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+    var util = new TriageUtils();
+    data.count = util.getOpenIncidentCount(gs.getUserID());
+    data.userName = gs.getUserName();
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-11-18 17:21:57</sys_created_on>
+        <sys_id>c032b48f832413107755c810feaad373</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Triage Open Count</sys_name>
+        <sys_package display_value="Triage Router" source="x_1910001_triage_0">153fd84b83a013107755c810feaad3f6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Triage Router">153fd84b83a013107755c810feaad3f6</sys_scope>
+        <sys_update_name>sp_widget_c032b48f832413107755c810feaad373</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-11-18 17:21:57</sys_updated_on>
+        <template><![CDATA[<div class="panel panel-default triage-card">
+  <div class="panel-heading"><strong>Triage Status</strong></div>
+  <div class="panel-body">
+    <p>Welcome, {{c.data.userName}}</p>
+    <h2 ng-class="c.statusClass()">{{c.data.count}}</h2>
+    <p>open incidents</p>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>
