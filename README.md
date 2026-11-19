@@ -53,6 +53,11 @@ servicenow-triage-app/
 ├── .github/workflows/test.yml     # GitHub Actions pipeline
 ├── servicenow/                    # Exported ServiceNow application files
 ├── tests/test_triage_api.py       # Pytest tests for the REST endpoint
+├── metadata                       # ServiceNow xml and app config files
+├── src/fluent/generated           # ServiceNow Generated file holding sys user keys
+├── now.config.json
+├── package.json
+├── .gitignore
 ├── .gitignore
 ├── requirements.txt
 └── README.md
